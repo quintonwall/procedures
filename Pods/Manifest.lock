@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.5.0)
+  - Eureka (3.1.0)
+  - Locksmith (3.0.0)
+  - PromiseKit (4.3.2):
+    - PromiseKit/Foundation (= 4.3.2)
+    - PromiseKit/QuartzCore (= 4.3.2)
+    - PromiseKit/UIKit (= 4.3.2)
+  - PromiseKit/CorePromise (4.3.2)
+  - PromiseKit/Foundation (4.3.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.3.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.3.2):
+    - PromiseKit/CorePromise
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - SwiftlySalesforce (4.0.3):
+    - Alamofire (~> 4.0)
+    - Locksmith (~> 3.0)
+    - PromiseKit (~> 4.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Eureka (~> 3.1)
+  - SDWebImage
+  - SwiftlySalesforce
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Eureka: d6725c38d0dcdceaa331d1468f75e76315715ae0
+  Locksmith: 310b4cc5031af5728bf4db5d4de547a5100c6a3b
+  PromiseKit: 32430ae679605b17c15d6193679cae7bf60147f7
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SwiftlySalesforce: 8cbf70547472660f436f955a2da8f379e2bb81d1
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 14f2c078e8b3bf14fac5d542ffa7ee06af7db4fd
+
+COCOAPODS: 1.1.1

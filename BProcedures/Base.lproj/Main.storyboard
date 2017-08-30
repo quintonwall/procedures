@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E0Z-7L-mTc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Procedure Table View Controller-->
+        <scene sceneID="Ddn-Z0-EU4">
+            <objects>
+                <tableViewController storyboardIdentifier="procedurelist" id="7AT-Fz-B1K" customClass="ProcedureTableViewController" customModule="BProcedures" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Ru-pu-wZv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="SwX-Mr-xHK" customClass="ProcedureTableViewCell" customModule="BProcedures" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="s" tableViewCell="SwX-Mr-xHK" id="5oR-O0-lc6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Procedure Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZz-5m-sIg">
+                                            <rect key="frame" x="8" y="13" width="128.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VZz-5m-sIg" firstAttribute="leading" secondItem="5oR-O0-lc6" secondAttribute="leadingMargin" id="YRp-DN-dbW"/>
+                                        <constraint firstItem="VZz-5m-sIg" firstAttribute="top" secondItem="5oR-O0-lc6" secondAttribute="topMargin" constant="5" id="jGI-Ru-UZW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="subject" destination="VZz-5m-sIg" id="9H5-Pf-jNJ"/>
+                                    <segue destination="xeC-NV-wr2" kind="show" identifier="startProcedureSteps" id="e8t-IH-b5I"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7AT-Fz-B1K" id="Hsd-ul-xFo"/>
+                            <outlet property="delegate" destination="7AT-Fz-B1K" id="HM2-wm-jWe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="7Li-d4-eXZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bo1-ol-E3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312.80000000000001" y="-675.11244377811101"/>
+        </scene>
+        <!--Step View Controller-->
+        <scene sceneID="CyZ-L2-wHK">
+            <objects>
+                <viewController id="xeC-NV-wr2" customClass="StepViewController" customModule="BProcedures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2vM-kB-xJG"/>
+                        <viewControllerLayoutGuide type="bottom" id="buY-jM-3gK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c2e-z2-4Hj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0j-h2-3C2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256.8" y="-675.11244377811101"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yll-xA-Xyh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E0Z-7L-mTc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fub-xR-r8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7AT-Fz-B1K" kind="relationship" relationship="rootViewController" id="Y2w-Ja-aAP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JvP-sr-5qi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-626.39999999999998" y="-675.11244377811101"/>
+        </scene>
+    </scenes>
+</document>
